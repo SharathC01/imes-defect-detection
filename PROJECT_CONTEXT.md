@@ -124,6 +124,9 @@ Loc 8 → [Arm 1 track] → Loc 6 → drops onto Conveyor 1 at Loc 5
   - Belt speed: feature = `journey_duration - G0_duration` (deviation from reference)
   - Inclination: G0 handoff transient magnitude = zero-angle reference
   - Frequency: G0 STFT = clean "no vibration defect" reference for EDA
+**G0 filename convention differs from other groups:**
+- G0 files: G0_P{p}_case_perfect.xls  (not case01, case02 etc.)
+- All other groups: G{g}_P{p}_case{g}{c}.xls
 
 **Case types (same structure across all 9 groups):**
 | Case suffix | Defects present | Belt speed (Rail2/Rail3) |
