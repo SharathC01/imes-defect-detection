@@ -194,5 +194,6 @@ def segment_journey(df: pd.DataFrame, pickup_time: float) -> dict:
         "full": df,
         "journey": df.loc[(t >= journey_start) & (t <= journey_end)],
         "handoff": df.loc[(t >= handoff_start) & (t <= handoff_end)],
+        "inclination": df.loc[(t >= 30.0) & (t <= 37.0)],
     }
     return segments

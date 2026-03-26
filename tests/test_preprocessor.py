@@ -114,7 +114,11 @@ def test_segment_journey_correct_time_bounds():
     segments = segment_journey(df, pickup_time=pickup_time)
 
     # Keys present
-    assert set(segments.keys()) == {"full", "journey", "handoff"}
+    assert set(segments.keys()) == {"full", "journey", "handoff", "inclination"}
+
+    assert segments["inclination"]["time"].min() >= 30.0
+    assert segments["inclination"]["time"].max() <= 37.0
+    assert len(segments["inclination"]) > 0
 
     # full — entire recording
     assert len(segments["full"]) == len(df)

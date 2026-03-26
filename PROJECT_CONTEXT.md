@@ -386,3 +386,19 @@ Step 8: notebooks/04_results_report.ipynb + README.md
 
 - `segment_journey(df, pickup_time) -> dict`
   Returns dict with keys: 'full', 'journey', 'handoff'
+
+## Corrections from Test Set Solution Sheet [LOCKED]
+
+1. Inclination target is SIGNED angle (-5° to +5°), not magnitude (0-5°).
+   Negative = conveyor tilted so P5 goes downhill at handoff.
+   Positive = conveyor tilted so P5 goes uphill at handoff.
+   Use regression only (not classification) — signed continuous output.
+
+2. Damping prediction requires TWO outputs:
+   - Stage 1: binary classification (present/absent)
+   - Stage 2: location classification (which location: 2,3,4,5,6)
+   Fixed phone spatial energy gradient features are key for location prediction.
+
+3. Combined defect cases exist (freq+incl, incl+damping).
+   Pipeline must run all four detectors independently and combine outputs.
+   Do not assume defects are mutually exclusive.
