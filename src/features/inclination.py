@@ -125,6 +125,9 @@ def extract_inclination_features(
         t_high = float(high_idx[0]) / fs
         if t_high >= t_low:
             rise_time = t_high - t_low
+    
+    if rise_time == 0.0:
+        rise_time = np.nan
 
     # ------------------------------------------------------------------
     # 6. post_impact_rms — RMS of filtered acc_abs in 0.5 s after peak
