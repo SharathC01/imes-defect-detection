@@ -172,3 +172,11 @@ Test files:
 Always test new modules with a scratch check.py on real G7 data
 before writing tests. Delete check.py after verification.
 Never commit check.py to the repo.
+---
+
+## 18. Frequency defect contaminates fixed phone RMS ratios
+case71 (frequency defect only) shows rms_ratio_P1=7.2, rms_ratio_P2=18.9
+against G0 baseline. The 45 Hz generator transmits energy through the frame
+to fixed phones P1 and P2, massively inflating their RMS ratios.
+Damping model must exclude cases with active frequency defects OR use
+phone-to-phone relative ratios (P3/P1, P4/P2) rather than absolute G0 ratios.
