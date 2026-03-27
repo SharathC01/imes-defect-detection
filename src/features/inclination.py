@@ -47,9 +47,11 @@ def extract_inclination_features(
             Maximum absolute value of ``acc_z`` in the window.  Captures
             vertical impact magnitude regardless of impact direction.
         ``'signed_peak_z'`` : float
-            Value of ``acc_z`` (not absolute) at the sample of peak
-            ``acc_abs``.  Negative = downward impact (P5 drops off a raised
-            section); positive = upward impact (P5 hits an upward ramp).
+            Filtered ``acc_z`` value at the sample of peak ``acc_abs``
+            (unfiltered peak index).  Uses low-pass filtered acc_z to
+            remove high-frequency contamination from combined defect cases.
+            Negative = downward impact (P5 drops off a raised section);
+            positive = upward impact (P5 hits an upward ramp).
         ``'peak_jerk'`` : float
             Maximum jerk magnitude in the window, where jerk is defined as
             ``np.diff(acc_abs) * fs``.  High jerk indicates a sharp,
@@ -91,10 +93,10 @@ def extract_inclination_features(
     peak_z = float(np.max(np.abs(acc_z)))
 
     # ------------------------------------------------------------------
-    # 2. signed_peak_z — raw acc_z value at peak index of UNFILTERED signal
+    # 2. signed_peak_z — filtered acc_z at peak index of UNFILTERED signal
     # ------------------------------------------------------------------
     peak_abs_idx = int(np.argmax(acc_abs))        # anchor: unfiltered peak
-    signed_peak_z = float(acc_z[peak_abs_idx])
+    signed_peak_z = float(acc_z_filtered[peak_abs_idx])
 
     # ------------------------------------------------------------------
     # 3. peak_jerk — filtered signal
