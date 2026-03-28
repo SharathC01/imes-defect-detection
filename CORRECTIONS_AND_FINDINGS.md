@@ -180,3 +180,14 @@ against G0 baseline. The 45 Hz generator transmits energy through the frame
 to fixed phones P1 and P2, massively inflating their RMS ratios.
 Damping model must exclude cases with active frequency defects OR use
 phone-to-phone relative ratios (P3/P1, P4/P2) rather than absolute G0 ratios.
+
+---
+## 19. labels.csv ground truth conventions
+- incl_degree: positive physical angle (degrees) for Loc4 cases
+  Loc5 cases have incl_degree=0 (non-detectable, treated as no-defect)
+- incl_detectable: 1 only for Loc4 cases
+- signed_peak_z feature will be NEGATIVE for positive incl_degree
+  (raised end at Loc4 → P5 drops → negative z-axis impact)
+  Model learns this inversion from training data
+- freq_hz in case5/case6 differs from case1 for same group
+  (case1 uses original location, case5/6 always use location 6)
