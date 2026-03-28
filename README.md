@@ -11,6 +11,11 @@ Rebuilt in Python as a portfolio project demonstrating professional ML engineeri
 
 ---
 
+## Development Notes
+This project was developed using Claude Code (Anthropic) as an AI coding 
+assistant, with all architectural decisions, feature engineering choices, 
+and validation made by the author.
+
 ## Problem
 
 This project detects and characterises four types of defects in a mock conveyor production system using only smartphone accelerometer data. Five phones were deployed per recording — one riding with the conveyor (P5) and four fixed on the frame (P1–P4) — across 270 recordings from nine experimental groups.

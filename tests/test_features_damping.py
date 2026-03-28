@@ -8,7 +8,10 @@ from src.features.damping import extract_damping_features
 _EXPECTED_KEYS = {
     "rms_P1", "rms_P2", "rms_P3", "rms_P4",
     "rms_ratio_P1", "rms_ratio_P2", "rms_ratio_P3", "rms_ratio_P4",
-    "min_rms_ratio", "min_rms_ratio_phone",
+    "min_rms_ratio", "min_rms_ratio_phone",'rms_ratio_P3_to_P1',
+'rms_ratio_P4_to_P1', 
+'rms_ratio_P3_to_P2',
+'rms_ratio_P4_to_P2',
 }
 
 _PHONE_NAMES = ["P1", "P2", "P3", "P4"]
