@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/18723164bbbf445697b7095ed437aa89/artifacts
+end_time: 1774734720988
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: 18723164bbbf445697b7095ed437aa89
+run_name: damping_gradientboostingclassifier
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774734713133
+status: 3
+tags: []
+user_id: sharu

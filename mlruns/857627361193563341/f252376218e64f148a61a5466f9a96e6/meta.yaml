@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/f252376218e64f148a61a5466f9a96e6/artifacts
+end_time: 1774730013018
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: f252376218e64f148a61a5466f9a96e6
+run_name: damping_svc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774730005348
+status: 3
+tags: []
+user_id: sharu

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/119b6dd9de504a7fa56ac1c25aadf1cd/artifacts
+end_time: 1774730004777
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: 119b6dd9de504a7fa56ac1c25aadf1cd
+run_name: damping_logisticregression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774729997799
+status: 3
+tags: []
+user_id: sharu

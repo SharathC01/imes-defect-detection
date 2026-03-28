@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/c37443b73aed486c9432dfa52e8c0cae/artifacts
+end_time: 1774734678163
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: c37443b73aed486c9432dfa52e8c0cae
+run_name: damping_randomforestclassifier
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774734666729
+status: 3
+tags: []
+user_id: sharu

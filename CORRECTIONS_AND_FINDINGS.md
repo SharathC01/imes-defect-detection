@@ -191,3 +191,33 @@ phone-to-phone relative ratios (P3/P1, P4/P2) rather than absolute G0 ratios.
   Model learns this inversion from training data
 - freq_hz in case5/case6 differs from case1 for same group
   (case1 uses original location, case5/6 always use location 6)
+
+  ---
+## 20. Missing data file
+G3_P{1-4}_case34.xls files are missing/deleted due to data quality issues.
+features_fixed.csv has 53 rows instead of 54.
+This affects the belt speed case for G3 only.
+features_p5.csv is complete at 54 rows (G3_P5_case34 loaded successfully).
+
+---
+
+## 21. Model results — final
+
+G8-G9 holdout:
+- Frequency: F1=1.000 (perfect)
+- Inclination binary: F1=1.000 (perfect)
+- Inclination angle: MAE=0.179°, R²=0.936 (excellent)
+- Belt speed: Rail2 MAE=3.90, Rail3 MAE=5.92 (moderate)
+- Damping: AUC=1.000, F1=0.733 (good ranking, threshold limited)
+
+Professor test cases (5 cases):
+- Frequency: 3/3 correct (cases 1,3,4 detected at correct Hz)
+- Inclination: 5/5 correct (all non-detectable cases correctly 0)
+- Belt speed: all cases correctly near 70/100
+- Damping: 3/5 correct after phone-to-phone ratio fix
+  Remaining errors:
+  - Case 1: false positive (freq at loc6 still inflates ratios)
+  - Case 5: false negative (damping at loc6 too subtle for fixed phones)
+
+Phone-to-phone relative ratio features (rms_ratio_P3_to_P1 etc.)
+improved damping AUC from 0.938 to 1.000 on G8-G9.

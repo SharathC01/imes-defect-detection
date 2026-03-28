@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/3a219b64f33c4b309799a673f993aafc/artifacts
+end_time: 1774729774692
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: 3a219b64f33c4b309799a673f993aafc
+run_name: inclination_binary_randomforestclassifier
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774729768602
+status: 3
+tags: []
+user_id: sharu

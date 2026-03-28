@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/780c6d58a69e4a3e9ebbe86a3eedf949/artifacts
+end_time: 1774729997390
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: 780c6d58a69e4a3e9ebbe86a3eedf949
+run_name: belt_speed_multioutputregressor_gradientboostingregressor
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774729988971
+status: 3
+tags: []
+user_id: sharu

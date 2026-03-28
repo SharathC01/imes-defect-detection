@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/c0a4e35388af43eeacce3d340dbab95a/artifacts
+end_time: 1774734482863
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: c0a4e35388af43eeacce3d340dbab95a
+run_name: belt_speed_multioutputregressor_ridge
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774734477322
+status: 3
+tags: []
+user_id: sharu

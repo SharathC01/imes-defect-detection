@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/ccc822bd7f2c42a7a0ff87ec0de70bd4/artifacts
+end_time: 1774729607554
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: ccc822bd7f2c42a7a0ff87ec0de70bd4
+run_name: frequency_logisticregression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774729592402
+status: 3
+tags: []
+user_id: sharu

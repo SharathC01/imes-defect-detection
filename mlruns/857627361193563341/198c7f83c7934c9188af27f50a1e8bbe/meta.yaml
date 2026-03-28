@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/198c7f83c7934c9188af27f50a1e8bbe/artifacts
+end_time: 1774729704394
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: 198c7f83c7934c9188af27f50a1e8bbe
+run_name: frequency_gradientboostingclassifier
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774729697766
+status: 3
+tags: []
+user_id: sharu

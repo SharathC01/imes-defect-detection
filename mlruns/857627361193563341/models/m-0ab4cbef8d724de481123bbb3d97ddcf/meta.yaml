@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/models/m-0ab4cbef8d724de481123bbb3d97ddcf/artifacts
+creation_timestamp: 1774730005561
+experiment_id: '857627361193563341'
+last_updated_timestamp: 1774730013001
+model_id: m-0ab4cbef8d724de481123bbb3d97ddcf
+model_type: null
+name: model
+source_run_id: f252376218e64f148a61a5466f9a96e6
+status: 2
+status_message: null

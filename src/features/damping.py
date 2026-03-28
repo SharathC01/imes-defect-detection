@@ -113,6 +113,22 @@ def extract_damping_features(
             the minimum.  If all ratios are ``np.nan``, returns
             ``'unknown'``.
 
+        ``'rms_ratio_P3_to_P1'``, ``'rms_ratio_P4_to_P1'``,
+        ``'rms_ratio_P3_to_P2'``, ``'rms_ratio_P4_to_P2'`` : float
+            Phone-to-phone RMS ratios::
+
+                rms_ratio_P3_to_P1 = rms_P3 / rms_P1
+                rms_ratio_P4_to_P1 = rms_P4 / rms_P1
+                rms_ratio_P3_to_P2 = rms_P3 / rms_P2
+                rms_ratio_P4_to_P2 = rms_P4 / rms_P2
+
+            Phone-to-phone ratios are robust to frequency defect
+            contamination.  When a frequency generator is active, it
+            inflates RMS of all fixed phones proportionally.  Taking
+            ratios between phones cancels this common-mode inflation,
+            leaving only the spatial damping signal.  Returns ``np.nan``
+            if the denominator phone RMS is zero.
+
     Notes
     -----
     The handoff exclusion mask is::
@@ -135,6 +151,19 @@ def extract_damping_features(
             rms_ratio_per_phone[phone] = np.nan
         else:
             rms_ratio_per_phone[phone] = rms / g0_rms
+
+    # ------------------------------------------------------------------
+    # Phone-to-phone relative ratios (robust to frequency defect)
+    # ------------------------------------------------------------------
+    rms_P1 = rms_per_phone["P1"]
+    rms_P2 = rms_per_phone["P2"]
+    rms_P3 = rms_per_phone["P3"]
+    rms_P4 = rms_per_phone["P4"]
+
+    rms_ratio_P3_to_P1 = rms_P3 / rms_P1 if rms_P1 != 0.0 and not np.isnan(rms_P1) else np.nan
+    rms_ratio_P4_to_P1 = rms_P4 / rms_P1 if rms_P1 != 0.0 and not np.isnan(rms_P1) else np.nan
+    rms_ratio_P3_to_P2 = rms_P3 / rms_P2 if rms_P2 != 0.0 and not np.isnan(rms_P2) else np.nan
+    rms_ratio_P4_to_P2 = rms_P4 / rms_P2 if rms_P2 != 0.0 and not np.isnan(rms_P2) else np.nan
 
     # ------------------------------------------------------------------
     # Summary features: which phone shows the greatest attenuation
@@ -160,4 +189,8 @@ def extract_damping_features(
         "rms_ratio_P4": rms_ratio_per_phone["P4"],
         "min_rms_ratio": min_rms_ratio,
         "min_rms_ratio_phone": min_rms_ratio_phone,
+        "rms_ratio_P3_to_P1": rms_ratio_P3_to_P1,
+        "rms_ratio_P4_to_P1": rms_ratio_P4_to_P1,
+        "rms_ratio_P3_to_P2": rms_ratio_P3_to_P2,
+        "rms_ratio_P4_to_P2": rms_ratio_P4_to_P2,
     }

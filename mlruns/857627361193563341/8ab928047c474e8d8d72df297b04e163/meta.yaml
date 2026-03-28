@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/8ab928047c474e8d8d72df297b04e163/artifacts
+end_time: 1774734358569
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: 8ab928047c474e8d8d72df297b04e163
+run_name: inclination_binary_svc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774734351922
+status: 3
+tags: []
+user_id: sharu

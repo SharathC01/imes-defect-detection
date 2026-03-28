@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/43c96ac9b2ed4458b2035b1623b4a545/artifacts
+end_time: 1774734477134
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: 43c96ac9b2ed4458b2035b1623b4a545
+run_name: inclination_regression_gradientboostingregressor
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774734471331
+status: 3
+tags: []
+user_id: sharu

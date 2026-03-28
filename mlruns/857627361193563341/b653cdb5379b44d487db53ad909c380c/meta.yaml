@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/b653cdb5379b44d487db53ad909c380c/artifacts
+end_time: 1774734318633
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: b653cdb5379b44d487db53ad909c380c
+run_name: frequency_randomforestclassifier
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774734312947
+status: 3
+tags: []
+user_id: sharu

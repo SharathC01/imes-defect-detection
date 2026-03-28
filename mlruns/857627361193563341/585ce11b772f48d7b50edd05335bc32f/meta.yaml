@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/585ce11b772f48d7b50edd05335bc32f/artifacts
+end_time: 1774734272498
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: 585ce11b772f48d7b50edd05335bc32f
+run_name: frequency_svc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774734266787
+status: 3
+tags: []
+user_id: sharu

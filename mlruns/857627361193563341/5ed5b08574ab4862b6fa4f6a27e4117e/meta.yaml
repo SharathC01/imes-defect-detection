@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/5ed5b08574ab4862b6fa4f6a27e4117e/artifacts
+end_time: 1774729711160
+entry_point_name: ''
+experiment_id: '857627361193563341'
+lifecycle_stage: active
+run_id: 5ed5b08574ab4862b6fa4f6a27e4117e
+run_name: inclination_binary_logisticregression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774729705036
+status: 3
+tags: []
+user_id: sharu

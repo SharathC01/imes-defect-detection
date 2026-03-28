@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/sharu/ML%20Projects/IMES%20Project/mlruns/857627361193563341/models/m-a4170708be904cf194a38aa3d523feb9/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.10.1
+model_id: m-a4170708be904cf194a38aa3d523feb9
+model_size_bytes: 159656
+model_uuid: m-a4170708be904cf194a38aa3d523feb9
+prompts: null
+run_id: 90b04602fa184f36bb4b5ce1fe1afc0c
+utc_time_created: '2026-03-28 21:47:06.504959'
